@@ -1648,8 +1648,8 @@ scroll-top i {
   padding: 22px 0 0;
 
   border-top: 1px solid #eee;
-
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .footer-legal {
