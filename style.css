@@ -1243,6 +1243,8 @@ scroll-top i {
 
   .weekly-content {
     gap: 18px;
+    margin: 15px;
+    flex-direction: column;
   }
 
   .weekly-image {
@@ -1274,7 +1276,7 @@ scroll-top i {
     align-self: stretch;
   }
   .weekly-image img {
-    width: 100%;
+    width: 350px;
     height: auto;
     object-fit: contain;
   }
@@ -1295,7 +1297,7 @@ scroll-top i {
 
   .weekly-content {
     width: 100%;
-
+    margin: 10px;
     gap: 20px;
   }
 
@@ -1339,6 +1341,7 @@ scroll-top i {
 
   .weekly-image {
     width: 100%;
+    margin: 10px;
     height: auto;
   }
 
@@ -1550,15 +1553,16 @@ scroll-top i {
 
 .footer-brand p,
 .footer-column p {
-  font-size: 13px;
-  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
   margin: 0 0 20px;
   overflow-wrap: anywhere;
 }
 
 .footer-column h3 {
   color: #222;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   margin: 8px 0 20px;
 }
@@ -1571,11 +1575,14 @@ scroll-top i {
 
 .footer-column li {
   margin-bottom: 10px;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .footer-column a {
   color: #777;
+  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -1594,7 +1601,7 @@ scroll-top i {
   align-items: center;
   justify-content: center;
   color: #777;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
 }
