@@ -14,7 +14,7 @@
     <header class="navbar">
       <nav class="site-header">
         <div class="container">
-          <div class="logo"><span>G</span>oru.</div>
+          <div class="logo"><span class="logo-G">G</span>oru<span class="logo-text">.</span></div>
           <nav class="nav-links">
             <a href="">HOME</a>
             <a href="">SHOP</a>
@@ -23,7 +23,7 @@
             <a href="">CONTACT</a>
           </nav>
           <div class="nav-right">
-            <button class="mobile-menu">
+            <button class="mobile-menu" id="mobileMenuBtn" type="button">
               MENU<i class="fa-solid fa-bars"></i>
             </button>
             <span class="search-icon">
@@ -48,6 +48,62 @@
           </div>
         </div>
       </nav>
+       <div class="mobile-nav" id="mobileNav">
+          <div class="mobile-nav-item">
+            <button class="mobile-nav-link dropdown-btn" type="button">
+              HOME
+              <span class="sub-menu-toggler" id="subMenuToggler">
+                <i class="fa-solid fa-caret-down" type="button"></i></span>
+            </button>
+            <div class="mobile-submenu">
+              <a href="">Home one</a>
+              <a href="">Home two</a>
+            </div>
+          </div>
+          <div class="mobile-nav-item">
+            <button class="mobile-nav-link dropdown-btn" type="button">
+              SHOP
+              <span class="sub-menu-toggler"><i class="fa-solid fa-caret-down" type="button"></i></span>
+            </button>
+            <div class="mobile-submenu">
+              <a href="">Shop fullwidth</a>
+              <a href="">Shop Left Sidebar</a>
+              <a href="">Shop Right Sidebar</a>
+              <a href="">Shop Details</a>
+              <a href="">Cart Page</a>
+              <a href="">Checkout Page</a>
+              <a href="">Wishlist Page</a>
+            </div>
+          </div>
+          <div class="mobile-nav-item">
+            <button class="mobile-nav-link dropdown-btn" type="button">
+              PAGES
+              <span class="sub-menu-toggler"><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <div class="mobile-submenu">
+              <a href="">About Us</a>
+              <a href="">Contact Us</a>
+              <a href="">FAQ</a>
+              <a href="">404 Page</a>
+            </div>
+          </div>
+          <div class="mobile-nav-item">
+            <button class="mobile-nav-link dropdown-btn" type="button">
+              NEWS
+              <span class="sub-menu-toggler"><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <div class="mobile-submenu">
+              <a href="">News Grid</a>
+              <a href="">News List</a>
+              <a href="">News Details</a>
+            </div>
+          </div>
+          <div class="mobile-nav-item">
+            <button class="mobile-nav-link dropdown-btn" type="button">
+              CONTACT
+            </button>
+          </div>
+        </div>
     </header>
     <main class="hero fl-image">
       <div class="scroll-section">
@@ -177,8 +233,7 @@
       <div class="vertical-titles">
         <span
           ><h3>MOST</h3>
-          POPULAR</span
-        >
+          POPULAR</span>
       </div>
       <div class="popular-content">
         <div class="popular-top">
@@ -426,9 +481,10 @@
         </div>
         <div class="footer-column">
           <h3>Contact & Address</h3>
-          <p>123 Street, Gandy Street, Syracuse New York - 13221.</p>
-          <br />
-          Phone: +1 315-234-3812 Email:<br />
+          <p>123 Street, Gandy Street, Syracuse New York - 13221.
+          <br>
+          <br>
+          Phone: +1 315-234-3812 Email:<br></p>
           <a href="">info@goru.com</a>
         </div>
         <div class="footer-column footer-subscribe">
@@ -458,5 +514,7 @@
         </div>
       </div>
     </footer>
+  
+    <script src="script.js"></script>
   </body>
 </html>
