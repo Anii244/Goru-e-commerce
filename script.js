@@ -1,21 +1,45 @@
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileNav = document.getElementById("mobileNav");
 
-      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-      const mobileNav = document.getElementById("mobileNav");
-      const dropdownBtns = document.querySelectorAll(".dropdown-btn");
+mobileMenuBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+});
 
-      mobileMenuBtn.addEventListener("click", () => {
-        mobileNav.classList.toggle("active");
-      });
+const dropdownBtns = document.querySelectorAll(".dropdown-btn");
 
-      const subMenuToggler = document.getElementById("subMenuToggler");
-      subMenuToggler.addEventListener("click", () => {
-        const submenu = subMenuToggler.nextElementSibling;
+dropdownBtns.forEach((btn) => {
+
+    btn.addEventListener("click", () => {
+
+        const submenu = btn.nextElementSibling;
+
         submenu.classList.toggle("active");
-      });
 
-      dropdownBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const submenu = btn.nextElementSibling;
-          submenu.classList.toggle("active");
-        });
-      });
+    });
+
+});
+
+const scrollTopBtn = document.querySelector(".scroll-top");
+
+if (scrollTopBtn) {
+
+    scrollTopBtn.addEventListener("click", () => {
+
+        const hero = document.getElementById("hero");
+
+        if (hero) {
+
+            hero.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    });
+
+}
+document.getElementById("hero").scrollIntoView({
+    behavior: "smooth"
+});
+
