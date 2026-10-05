@@ -534,13 +534,13 @@ scroll-top i {
     min-height: 82px;
   }
   .site-header {
-    position:relative;
+    position: relative;
     width: 100%;
     height: 82px;
   }
   .navbar {
     width: 100%;
-    position:relative;
+    position: relative;
     height: 82px;
   }
   .nav-links,
@@ -642,7 +642,7 @@ scroll-top i {
     background: rgba(255, 255, 255, 0.2);
     font-size: 12px;
     font-weight: 700;
-    color: #fff;
+    color: white;
   }
   .mobile-nav-item.open>.mobile-nav-link{
     background: #070808;
@@ -651,18 +651,20 @@ scroll-top i {
     background: #020808;
   }
   .mobile-submenu {
+   
     display: flex;
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
+    /* opacity: 0; */
     transition:
         max-height 0.45s ease,
         opacity 0.3s ease;
   }
   .mobile-submenu.active{
     max-height: 500px;
-    opacity: 1;
+    /* opacity: 1; */
+     z-index: 100;
   }
   
   .mobile-nav-item.open>.mobile-submenu{
@@ -679,7 +681,7 @@ scroll-top i {
     font-weight: 700;
     border-bottom: 1px solid #c4c4c4;
     text-decoration: none;
-    opacity: 0;
+    /* opacity: 0; */
     transform: translateY(-10px);
     transition: opacity 0.35s ease, transform 0.35s ease;
   }
@@ -743,10 +745,12 @@ scroll-top i {
     height: 82px;
   }
   .site-header {
+    position: relative;
+    width: 100%;
     min-height: 82px;
   }
   .navbar {
-    width: calc(100% - 35px);
+    /* width: ; */
   }
   .logo {
     font-size: 31px;
